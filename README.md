@@ -60,7 +60,7 @@ This project aims to:
 ```sql
 SELECT a.Title, ar.Name
 FROM Artwork a
-JOIN Artist ar ON a.ArtistID = ar.ArtistID;
+JOIN Artist ar ON a.ArtistID = ar.ArtistID
 
 ## Project Workflow
 Requirement Analysis → ER Modeling → Schema Design → Normalization → SQL Implementation → Testing
