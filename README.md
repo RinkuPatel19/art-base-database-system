@@ -19,7 +19,7 @@ Managing art gallery data manually leads to inefficiencies. This project builds 
 ## Database Design
 
 ### ER Diagram
-<img src="er_diagram.png" width="500">
+<img src="er_diagram.jpg" width="500">
 
 ## Project Files
 - project_report.pdf  
