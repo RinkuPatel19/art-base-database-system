@@ -54,13 +54,12 @@ This project aims to:
   - Data insertion  
   - Data retrieval  
   - Joins across tables  
-  - Data updates and deletion  
-
+  - Data updates and deletion
+    
 ## Sample SQL Query
-```sql
 SELECT a.Title, ar.Name
 FROM Artwork a
-JOIN Artist ar ON a.ArtistID = ar.ArtistID
+JOIN Artist ar ON a.ArtistID = ar.ArtistID;
 
 ## Project Workflow
 Requirement Analysis → ER Modeling → Schema Design → Normalization → SQL Implementation → Testing
@@ -87,3 +86,5 @@ SQL queries and implementation details are included in the project report. A com
 ## Author
 Rinku Patel  
 Data Analyst | SQL | Python | Power BI | Tableau  
+
+
