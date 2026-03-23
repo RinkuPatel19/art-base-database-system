@@ -57,10 +57,12 @@ This project aims to:
   - Data updates and deletion
     
 ## Sample SQL Query
+
+```sql
 SELECT a.Title, ar.Name
 FROM Artwork a
 JOIN Artist ar ON a.ArtistID = ar.ArtistID;
-
+```  
 ## Project Workflow
 Requirement Analysis → ER Modeling → Schema Design → Normalization → SQL Implementation → Testing
 
