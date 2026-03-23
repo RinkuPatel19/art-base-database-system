@@ -56,12 +56,39 @@ This project aims to:
   - Joins across tables  
   - Data updates and deletion
     
-## Sample SQL Query
+## Sample SQL Queries
 
+### 1. Retrieve all artworks with artist names
 ```sql
 SELECT a.Title, ar.Name
 FROM Artwork a
 JOIN Artist ar ON a.ArtistID = ar.ArtistID;
+``` 
+### 2. Find total number of artworks per artist
+```sql
+SELECT ar.Name, COUNT(a.ArtworkID) AS TotalArtworks
+FROM Artist ar
+LEFT JOIN Artwork a ON ar.ArtistID = a.ArtistID
+GROUP BY ar.Name;
+```
+### 3. Get highest priced artwork
+```sql
+SELECT Title, Price
+FROM Artwork
+ORDER BY Price DESC
+LIMIT 1;
+```
+### 4. List customers by total spending (descending)
+```sql
+SELECT Name, TotalSpent
+FROM Customer
+ORDER BY TotalSpent DESC;
+```  
+### 5. Retrieve artworks with their group names
+```sql
+SELECT a.Title, g.GroupName
+FROM Artwork a
+JOIN ArtGroup g ON a.GroupID = g.GroupID;
 ```  
 ## Project Workflow
 Requirement Analysis → ER Modeling → Schema Design → Normalization → SQL Implementation → Testing
